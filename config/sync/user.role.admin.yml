@@ -1,0 +1,43 @@
+uuid: 87924282-5829-4af9-a49d-67189c50ec3e
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.blog_post
+    - workflows.workflow.editorial
+  module:
+    - content_moderation
+    - node
+    - search
+    - system
+id: admin
+label: 'Blog Admin'
+weight: 5
+is_admin: null
+permissions:
+  - 'access content'
+  - 'access content overview'
+  - 'access user profiles'
+  - 'administer account settings'
+  - 'administer content types'
+  - 'administer nodes'
+  - 'administer permissions'
+  - 'administer search'
+  - 'administer users'
+  - 'bypass node access'
+  - 'cancel account'
+  - 'create blog_post content'
+  - 'delete any blog_post content'
+  - 'delete own blog_post content'
+  - 'edit any blog_post content'
+  - 'edit own blog_post content'
+  - 'search content'
+  - 'use advanced search'
+  - 'use editorial transition archive'
+  - 'use editorial transition create_new_draft'
+  - 'use editorial transition publish'
+  - 'use editorial transition publish_from_ready_to_publish'
+  - 'use editorial transition ready_to_publish'
+  - 'view any unpublished content'
+  - 'view latest version'
+  - 'view own unpublished content'

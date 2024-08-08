@@ -1,0 +1,21 @@
+uuid: 87875be3-a70e-49e0-9d57-2e372ac3b343
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_schedule_publication
+    - node.type.blog_post
+  module:
+    - blog_publish
+id: node.blog_post.field_schedule_publication
+field_name: field_schedule_publication
+entity_type: node
+bundle: blog_post
+label: 'Schedule Publication'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: blog_publish

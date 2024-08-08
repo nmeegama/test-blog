@@ -1,0 +1,25 @@
+uuid: 21e2a17a-e06b-4889-b206-17977656fc47
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - the_blog
+id: the_blog_useraccountmenu
+theme: the_blog
+region: header
+weight: -4
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

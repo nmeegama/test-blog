@@ -1,0 +1,23 @@
+uuid: c53324ae-b5a4-40bf-9f90-3d4feecdb7b1
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - the_blog
+id: the_blog_sitebranding
+theme: the_blog
+region: header
+weight: -5
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Blog Application'
+  label_display: '0'
+  provider: system
+  use_site_logo: false
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

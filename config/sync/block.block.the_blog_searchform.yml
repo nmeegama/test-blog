@@ -1,0 +1,26 @@
+uuid: 3a09a720-1758-4e25-a3fd-ce67a5212bc3
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+    - system
+  theme:
+    - the_blog
+id: the_blog_searchform
+theme: the_blog
+region: content
+weight: -5
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

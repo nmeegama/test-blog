@@ -1,0 +1,27 @@
+uuid: 73e1ccca-b284-4354-8d9e-552f69c8557d
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.blog_post
+    - workflows.workflow.editorial
+  module:
+    - content_moderation
+    - node
+    - search
+    - system
+id: editor
+label: Editor
+weight: 4
+is_admin: null
+permissions:
+  - 'access content'
+  - 'access content overview'
+  - 'create blog_post content'
+  - 'delete own blog_post content'
+  - 'edit own blog_post content'
+  - 'search content'
+  - 'use advanced search'
+  - 'use editorial transition create_new_draft'
+  - 'use editorial transition ready_to_publish'
+  - 'view own unpublished content'

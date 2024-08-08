@@ -1,0 +1,22 @@
+uuid: 09ca0d47-9050-4cff-ab37-c6f114f9f40f
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - the_blog
+_core:
+  default_config_hash: '-Ac3ISpIT0PQ-whzD7_dw0SdKi6dAbRFNWdSjOiVDqg'
+id: the_blog_messages
+theme: the_blog
+region: content
+weight: 1
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }
