@@ -1,0 +1,23 @@
+<?php
+
+/**
+ * @file
+ * Contains blog_publish.install.
+ */
+
+use Drupal\views\Entity\View;
+use Symfony\Component\Yaml\Yaml;
+
+/**
+ * Add list view.
+ */
+function blog_publish_update_8400() {
+  // Only create if blog publish view doesn't exist and views is enabled.
+  if (\Drupal::moduleHandler()->moduleExists('views') && !View::load('blog_publish')) {
+    $config = \Drupal::configFactory()
+      ->getEditable('views.view.blog_publish');
+    $newConfigData = Yaml::parseFile(\Drupal::service('extension.list.module')
+      ->getPath('blog_publish') . '/config/optional/views.view.blog_publish.yml');
+    $config->setData($newConfigData)->save();
+  }
+}

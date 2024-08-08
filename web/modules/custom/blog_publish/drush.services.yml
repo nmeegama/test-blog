@@ -1,0 +1,6 @@
+services:
+  blog_publish.commands:
+    class: \Drupal\blog_publish\Commands\BlogPublishCommands
+    tags:
+      - { name: drush.command }
+    arguments: ['@blog_publish.update']

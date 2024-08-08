@@ -1,0 +1,12 @@
+services:
+  blog_publish.update:
+    class: Drupal\blog_publish\Service\BlogPublishCron
+    arguments:
+      [
+        '@entity_type.bundle.info',
+        '@entity_field.manager',
+        '@entity_type.manager',
+        '@datetime.time',
+        '@content_moderation.moderation_information',
+        '@logger.factory',
+      ]

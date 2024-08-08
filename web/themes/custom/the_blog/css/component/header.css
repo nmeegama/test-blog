@@ -1,0 +1,59 @@
+.content-header {
+  overflow: hidden;
+  margin-bottom: var(--space-s);
+  padding: var(--space-l) 0 0;
+  background-color: var(--color-gray-050);
+}
+
+.region-header nav.navigation {
+  float: right;
+  margin-top: 13px;
+  z-index: 1;
+}
+.region-header nav.navigation .navbar {
+  display: flex; /* Make the navbar a flex container */
+  align-items: center; /* Center items vertically */
+  margin-bottom: 0;
+}
+
+.region-header nav.navigation li {
+  display: inline-block; /* Make list items inline */
+  margin-left: 10px; /* Spacing between items */
+  margin-bottom: 20px;
+}
+
+.region-header nav.navigation a {
+  font-weight: 700;
+  font-size: 16px;
+  color: #187ee3;
+  text-transform: uppercase;
+  border-radius: 10px;
+  padding: 5px 10px; /* Add padding for better spacing */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.region-header nav.navigation a.is-active {
+  background: #3498db;
+  color: #fff;
+}
+
+.region-header nav.navigation a:hover {
+  background: #000;
+  color: #fff;
+}
+
+.block-system-branding-block{
+  padding-left: 20px;
+}
+
+.block-system-branding-block a{
+  font-weight: 700;
+  font-size: 26px;
+  color: #3498db;
+  text-decoration: none; /* Remove underline from links */
+}
+
+.block-system-branding-block a:hover{
+  color: #000;
+}
+

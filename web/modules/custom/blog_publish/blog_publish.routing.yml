@@ -1,0 +1,39 @@
+blog_publish.multiple_updates:
+  path: '/admin/content/blog-publish/add'
+  defaults:
+    _title: 'Add blog publish'
+    _form: '\Drupal\blog_publish\Form\MultipleUpdatesForm'
+  requirements:
+    _permission: 'access blog publish pages'
+
+blog_publish.edit_update:
+  path: '/admin/content/blog-publish/edit/{entity}/{field_delta}'
+  defaults:
+    _title: 'Edit blog publish'
+    _form: '\Drupal\blog_publish\Form\EditUpdateForm'
+  requirements:
+    _permission: 'access blog publish pages'
+  options:
+    parameters:
+      entity:
+        type: entity:node
+
+blog_publish.delete_update:
+  path: '/admin/content/blog-publish/delete/{entity}/{field_delta}'
+  defaults:
+    _title: 'Delete blog publish'
+    _form: '\Drupal\blog_publish\Form\DeleteUpdateForm'
+  requirements:
+    _permission: 'access blog publish pages'
+  options:
+    parameters:
+      entity:
+        type: entity:node
+
+blog_publish.listing_page:
+  path: '/admin/content/blog-publish'
+  defaults:
+    _title: '`Blog publish'
+    _controller: 'Drupal\blog_publish\Controller\BlogPublishListing::viewListing'
+  requirements:
+    _permission: 'view any unpublished content'

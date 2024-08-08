@@ -1,0 +1,8 @@
+# Main theme library.
+global:
+  js:
+    assets/js/scripts.js: {}
+  css:
+    theme:
+      assets/css/style.css: {}
+

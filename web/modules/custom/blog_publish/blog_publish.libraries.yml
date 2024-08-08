@@ -1,0 +1,5 @@
+blog_publish_widget:
+  version: VERSION
+  css:
+    component:
+      css/blog-publish-widget.css: {}
