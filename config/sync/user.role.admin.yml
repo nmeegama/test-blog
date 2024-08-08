@@ -8,6 +8,7 @@ dependencies:
   module:
     - content_moderation
     - node
+    - roleassign
     - search
     - system
 id: admin
@@ -21,9 +22,9 @@ permissions:
   - 'administer account settings'
   - 'administer content types'
   - 'administer nodes'
-  - 'administer permissions'
   - 'administer search'
   - 'administer users'
+  - 'assign roles'
   - 'bypass node access'
   - 'cancel account'
   - 'create blog_post content'

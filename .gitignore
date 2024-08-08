@@ -33,7 +33,7 @@
 # specific config files
 /config/sync/acc_api.certificate.yml
 
-*.sql
+/*.sql
 *.tgz
 *.tar.gz
 

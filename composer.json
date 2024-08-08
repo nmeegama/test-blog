@@ -21,7 +21,7 @@
         "drupal/core-composer-scaffold": "^10.3",
         "drupal/core-project-message": "^10.3",
         "drupal/core-recommended": "^10.3",
-        "drupal/masquerade": "^2.0@RC",
+        "drupal/roleassign": "^2.0",
         "drush/drush": "^12.5"
     },
     "conflict": {
